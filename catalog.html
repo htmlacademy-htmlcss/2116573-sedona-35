@@ -11,10 +11,10 @@
   </head>
 
   <body>
-    <header class="header">
-      <nav class="container">
+    <header class="header container">
+      <nav>
         <div class="header__left">
-          <a href="index.html">
+          <a class="header__logo" href="index.html">
             <img src="images/logo.svg" width="140" height="70" alt="Логотип сайта">
           </a>
           <div class="header__links">
@@ -45,8 +45,7 @@
         <div class="container">
           <h1 class="header__inner-title">Гостиницы Седоны</h1>
           <div class="breadcrumb__item">
-            <a href="index.html">
-              <img src="images/house-breadcrubs.svg" width="12" height="12" alt="Главная">
+            <a class="breadcrumb__item-" href="index.html">
             </a>
           </div>
           <div class="breadcrumb__item"><a>Гостиницы</a></div>
@@ -103,7 +102,7 @@
       <section class="catalog container">
         <h2 class="visially-hidden">Результаты поиска</h2>
         <!--Информация о каталоге-->
-        <header>
+        <header class="container">
           <p class="catalog__searching-result">Найдено гостиниц: <span class="search__result">38</span></p>
           <select name="sort-products" id="sort-products">
             <option value="popular-first">Сначала популярные</option>
@@ -124,92 +123,72 @@
           </a>
         </header>
         <!-- Товары -->
-        <section class="catalog__products products">
+        <section class="catalog__products product container">
 
-          <article class="product__card">
-            <div class="product__card-image">
-              <a href="#"><img src="images/hotel/Amara-Resort.jpg" alt="Скалы и космос"></a>
-            </div>
+          <section class="product__card">
+            <a class="product__card-image" href="#"><img src="images/hotel/Amara-Resort.jpg" alt="Скалы и космос"></a>
+            <h3 class="product__card-title">Amara Resort & Spa</h3>
             <div class="product__card-info">
-              <h3>Amara Resort & Spa</h3>
-              <p class="products__card-house-type">Гостиница</p>
-              <b class="products__card-price">от 4000 ₽</b>
+              <p class="product__card-house-type">Гостиница</p>
+              <b class="product__card-price">от 4000 ₽</b>
               <a href="#" class="button__card-detailed button" type="button">Подробнее</a>
               <button class="button__card-favourites button" type="button">В избранное</button>
-              <div class="products__card-star"></div>
-              <p class="products__card-rating button">Рэйтинг: <span class="rating__result">8,5</span></p>
+              <div class="product__card-star"></div>
+              <p class="product__card-rating button">Рэйтинг: <span class="rating__result">8,5</span></p>
             </div>
-          </article>
+          </section>
 
-          <article class="product__card">
-            <div class="product__card-image">
-              <a href="#"><img src="images/hotel/Villas-at-Poco.jpg" alt="Скала и радуга"></a>
-            </div>
+          <section class="product__card">
+            <a href="#"><img src="images/hotel/Villas-at-Poco.jpg" alt="Скала и радуга"></a>
+            <h3 class="product__title">Villas at Poco Diablo</h3>
             <div class="product__card-info">
-              <h3>Villas at Poco Diablo</h3>
-              <p class="products__card-house-type">Гостиница</p>
-              <b class="products__card-price">от 5000 ₽</b>
+              <p class="product__card-house-type">Гостиница</p>
+              <b class="product__card-price">от 5000 ₽</b>
               <a href="#" class="button__card-detailed button" type="button">Подробнее</a>
               <button class="button__card-favourites button" type="button">В избранное</button>
-              <div class="products__card-star"></div>
-              <p class="products__card-rating button">Рэйтинг: <span class="rating__result">9,2</span></p>
+              <div class="product__card-star"></div>
+              <p class="product__card-rating button">Рэйтинг: <span class="rating__result">9,2</span></p>
             </div>
-          </article>
+          </section>
 
-          <article class="product__card">
-            <div class="product__card-image">
-              <a href="#"><img src="images/hotel/Desert-Quail.jpg" alt="Скала"></a>
-            </div>
+          <section class="product__card">
+            <a href="#"><img src="images/hotel/Desert-Quail.jpg" alt="Скала"></a>
+            <h3 class="product__title">Desert Quail Inn</h3>
             <div class="product__card-info">
-              <h3>Desert Quail Inn</h3>
-              <p class="products__card-house-type">Гостиница</p>
-              <b class="products__card-price">от 2500 ₽</b>
+              <p class="product__card-house-type">Гостиница</p>
+              <b class="product__card-price">от 2500 ₽</b>
               <a href="#" class="button__card-detailed button" type="button">Подробнее</a>
               <button class="button__card-favourites button" type="button">В избранное</button>
-              <div class="products__card-star"></div>
-              <p class="products__card-rating button">Рэйтинг: <span class="rating__result">6,9</span></p>
+              <div class="product__card-star"></div>
+              <p class="product__card-rating button">Рэйтинг: <span class="rating__result">6,9</span></p>
             </div>
-          </article>
+          </section>
 
-          <article class="product__card">
-            <div class="product__card-image">
-              <a href="#"><img src="images/hotel/GreenTree.jpg" alt="Скала и космос"></a>
-            </div>
+          <section class="product__card">
+            <a href="#"><img src="images/hotel/GreenTree.jpg" alt="Скала и космос"></a>
+            <h3 class="product__title">GreenTree Inn</h3>
             <div class="product__card-info">
-              <h3>GreenTree Inn</h3>
-              <p class="products__card-house-type">Гостиница</p>
-              <b class="products__card-price">от 1500 ₽</b>
+              <p class="product__card-house-type">Гостиница</p>
+              <b class="product__card-price">от 1500 ₽</b>
               <a href="#" class="button__card-detailed button" type="button">Подробнее</a>
               <button class="button__card-favourites button" type="button">В избранное</button>
-              <div class="products__card-star"></div>
-              <p class="products__card-rating button">Рэйтинг: <span class="rating__result">5,0</span></p>
+              <div class="product__card-star"></div>
+              <p class="product__card-rating button">Рэйтинг: <span class="rating__result">5,0</span></p>
             </div>
-          </article>
+          </section>
         </section>
         <!-- Список страниц -->
-        <ul class="pagination">
-          <li class="pagination__item">
-            <a class="pagination__link pagination-active">1</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">2</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">3</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">4</a>
-          </li>
-          <li class="pagination__item">
-            <p class="pagination__link pagination__skipping">...</p>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">10</a>
-          </li>
-        </ul>
+        <div class="pagination">
+          <a class="pagination__link pagination-active">1</a>
+          <a class="pagination__link" href="#">2</a>
+          <a class="pagination__link" href="#">3</a>
+          <a class="pagination__link" href="#">4</a>
+          <p class="pagination__link pagination__skipping">...</p>
+          <a class="pagination__link" href="#">10</a>
+        </div>
       </section>
       <!-- Блок подписки -->
-      <article class="subscribe">
+      <article class="subscribe container">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">

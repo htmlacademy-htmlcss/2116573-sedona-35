@@ -41,66 +41,56 @@
       </nav>
     </header>
     <main class="main">
-      <div class="hero">
-        <p class="hero__container"></p>
-      </div>
+      <div class="hero"></div>
       <div class="about">
         <p>Седона — небольшой городок в Аризоне,
           заслуживающий большего!</p>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
-      <!-- Блок преимуществ -->
-      <section class="advantages">
-        <h2 class="visially-hidden">Преимущества</h2>
-        <div class="advantages__block advantages__real-town">
+      <!-- Блок особенностей -->
+      <section class="features__city">
+        <div class="features__item block-blue">
           <h2>Настоящий городок</h2>
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <div class="advantages__picture">
-          <img src="images/city.jpg" width="800" height="384" alt="Городок седоны">
-        </div>
+        <img src="images/city.jpg" width="800" height="384" alt="Городок Cедоны">
+      </section>
 
-        <div class="advantages__block advantages__square">
+      <ul class="features__list">
+        <li class="features__item">
           <h2>Небольшая площадь</h2>
           <p>Все достопримечательности находятся очень близко</p>
-        </div>
-
-        <div class="advantages__block advantages__beautiful-road">
+        </li>
+        <li class="features__item">
           <h2>Красивая дорога</h2>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-
-        <div class="advantages__block advantages__tourist">
+        </li>
+        <li class="features__item">
           <h2>Мало туристов</h2>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
-        </div>
+        </li>
+      </ul>
 
-        <div class="advantages__picture">
-          <img src="images/bridge.jpg" width="800" height="384" alt="Мост дьявола">
-        </div>
-        <div class="advantages__block advantages__devils-bridge">
+      <section class="features__devils-bridge">
+        <img src="images/bridge.jpg" width="800" height="384" alt="Мост дьявола">
+        <div class="features__item block-blue">
           <h2>Там есть мост дьявола</h2>
           <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </div>
       </section>
-      <!-- Блок основных характеристик -->
-      <section class="advantages-main">
-        <h2 class="visially-hidden">Ключевые преимущества</h2>
-        <div class="advantages__block advantages__housing">
-          <h2>Жильё</h2>
-          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </div>
-
-        <div class="advantages__block advantages__meal">
-          <h2>Еда</h2>
-          <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-        </div>
-
-        <div class="advantages__block advantages__souvenirs">
-          <h2>Сувениры</h2>
-          <p>Не только китайского, но и настоящего местного производства!</p>
-        </div>
-      </section>
+      <!-- Основные преимущества -->
+      <div class="advantages__block advantages__housing">
+        <h2>Жильё</h2>
+        <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+      </div>
+      <div class="advantages__block advantages__meal">
+        <h2>Еда</h2>
+        <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+      </div>
+      <div class="advantages__block advantages__souvenirs">
+        <h2>Сувениры</h2>
+        <p>Не только китайского, но и настоящего местного производства!</p>
+      </div>
       <!-- Блок отссылки на каталог -->
       <section class="search">
         <h2>Заинтересовались?</h2>
@@ -108,14 +98,12 @@
         <a href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
       <!-- Блок подписки -->
-      <section class="subscribe">
+      <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscribe__mail" type="email" name="mail" placeholder="Ваш e-mail" required>
-          <button class="subscribe__button button" type="submit">Подписаться</button>
-        </form>
-      </section>
+        <input class="subscribe__mail" type="email" name="mail" placeholder="Ваш e-mail" required>
+        <button class="subscribe__button button" type="submit">Подписаться</button>
+      </form>
     </main>
     <footer class="footer">
       <section class="footer__container">
