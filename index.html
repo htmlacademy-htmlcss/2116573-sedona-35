@@ -17,8 +17,8 @@
       <header class="header">
         <nav class="header__container">
           <div class="header__left">
-            <a href="">
-              <img class="header__logo" src="images/logo.svg" width="140" height="70" alt="Логотип сайта">
+            <a class="header__logo" href="">
+              <img src="images/logo.svg" width="140" height="70" alt="Логотип сайта">
             </a>
             <div class="header__links">
               <a class="header__link">Главная</a>
@@ -28,12 +28,12 @@
           </div>
 
           <div class="header__right">
-            <div class="header__links">
-              <a class="header__link">
+            <div class="header__links-right">
+              <a class="header__link header__link-right">
                 <span class="visually-hidden">Поиск</span>
                 <img src="images/search.svg" width="20" height="20" alt="Поиск">
               </a>
-              <a class="header__link" href="#">
+              <a class="header__link header__link-right" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <img src="images/favourite.svg" width="20" height="20" alt="Избранное">
               </a>
@@ -43,8 +43,9 @@
         </nav>
       </header>
       <main class="main">
+        <h1 class="visually-hidden">Седона</h1>
         <div class="hero"></div>
-        <div class="about">
+        <div class="about about__container">
           <p class="about__title title">Седона — небольшой городок в Аризоне,
             заслуживающий большего!</p>
           <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -81,7 +82,7 @@
           </div>
         </section>
         <!-- Основные преимущества -->
-        <div class="advantages__wrapper">
+        <section class="advantages__wrapper">
           <div class="advantages__block advantages__block-gray advantages__housing">
             <h2 class="title">Жильё</h2>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -94,7 +95,7 @@
             <h2 class="title">Сувениры</h2>
             <p>Не только китайского, но и настоящего местного производства!</p>
           </div>
-        </div>
+        </section>
         <!-- Блок отссылки на каталог -->
         <section class="search">
           <h2 class="title">Заинтересовались?</h2>
@@ -111,6 +112,7 @@
       </main>
       <footer class="footer">
         <section class="footer__container">
+          <h2 class="visually-hidden">Подвал сайта</h2>
           <div class="footer__left">
             <a href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вк</span>
