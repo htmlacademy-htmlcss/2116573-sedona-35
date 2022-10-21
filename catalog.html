@@ -95,71 +95,74 @@
                   <input class="filters__price-range" type="range" min="0" max="9000" step="100" name="price"
                     id="price">
                 </fieldset>
-                <button type="submit" class="button__sibmit-form button">Применить</button>
-                <button type="reset" class="button__reset-form button">Сбросить</button>
+                <button class="button__sibmit-form button">Применить</button>
+                <button class="button__reset-form button">Сбросить</button>
               </form>
             </article>
           </div>
         </header>
         <!-- Каталог товаров -->
-        <section class="catalog container">
+        <section class="container">
           <h2 class="visually-hidden">Результаты поиска</h2>
           <!--Информация о каталоге-->
-          <header class="header-container">
+          <header class="container-header">
             <p class="catalog__searching-result">Найдено гостиниц: <span class="search__result">38</span></p>
             <select class="sort-products" name="sort-products" id="sort-products">
               <option value="popular-first">Сначала популярные</option>
               <option value="expensive-first">Сначала дешёвые</option>
               <option value="cheap-first">Сначала дорогие</option>
             </select>
-            <a href="#" class="catalog-view" title="Таблица">
-              <span class="visually-hidden">Отобразить в виде таблицы</span>
-              <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#a)" fill="#000">
-                  <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h16v14H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            <a href="#" class="catalog-view" title="Слайд-шоу">
-              <span class="visually-hidden">Отобразить в виде слайд-шоу</span>
-              <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#a)" fill="#000">
-                  <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
-                </g>
-                <defs>
-                  <clipPath id="b">
-                    <path fill="#fff" d="M0 0h16v14H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            <a href="#" class="catalog-view" title="Список">
-              <span class="visually-hidden">Отобразить в виде списка</span>
-              <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#a)" fill="#000">
-                  <path
-                    d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
-                </g>
-                <defs>
-                  <clipPath id="c">
-                    <path fill="#fff" d="M0 0h16v14H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
+            <div class="sort-products__view">
+              <a href="#" class="catalog-view" title="Таблица">
+                <span class="visually-hidden">Отобразить в виде таблицы</span>
+                <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#a)" fill="#000">
+                    <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h16v14H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#" class="catalog-view" title="Слайд-шоу">
+                <span class="visually-hidden">Отобразить в виде слайд-шоу</span>
+                <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#a)" fill="#000">
+                    <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="b">
+                      <path fill="#fff" d="M0 0h16v14H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#" class="catalog-view" title="Список">
+                <span class="visually-hidden">Отобразить в виде списка</span>
+                <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#a)" fill="#000">
+                    <path
+                      d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="c">
+                      <path fill="#fff" d="M0 0h16v14H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
           </header>
           <!-- Товары -->
           <section class="catalog__products product container">
             <h2 class="visually-hidden">Товары</h2>
 
             <section class="product__card">
-              <a class="product__card-image" href="#"><img src="images/hotel/Amara-Resort.jpg" width="300" height="212"
-                  alt="Скалы и космос"></a>
+              <a class="product__card-image" href="#">
+                <img src="images/hotel/Amara-Resort.jpg" width="305" height="212" alt="Скалы и космос">
+              </a>
               <h3 class="product__card-title">Amara Resort & Spa</h3>
               <div class="product__card-info">
                 <p class="product__card-house-type">Гостиница</p>
@@ -172,7 +175,9 @@
             </section>
 
             <section class="product__card">
-              <a href="#"><img src="images/hotel/Villas-at-Poco.jpg" width="300" height="212" alt="Скала и радуга"></a>
+              <a class="product__card-image" href="#">
+                <img src="images/hotel/Villas-at-Poco.jpg" width="305" height="212" alt="Скала и радуга">
+              </a>
               <h3 class="product__card-title">Villas at Poco Diablo</h3>
               <div class="product__card-info">
                 <p class="product__card-house-type">Гостиница</p>
@@ -185,7 +190,9 @@
             </section>
 
             <section class="product__card">
-              <a href="#"><img src="images/hotel/Desert-Quail.jpg" width="300" height="212" alt="Скала"></a>
+              <a class="product__card-image" href="#">
+                <img src="images/hotel/Desert-Quail.jpg" width="305" height="212" alt="Скала">
+              </a>
               <h3 class="product__card-title">Desert Quail Inn</h3>
               <div class="product__card-info">
                 <p class="product__card-house-type">Гостиница</p>
@@ -198,7 +205,9 @@
             </section>
 
             <section class="product__card">
-              <a href="#"><img src="images/hotel/GreenTree.jpg" width="300" height="212" alt="Скала и космос"></a>
+              <a class="product__card-image" href="#">
+                <img src="images/hotel/GreenTree.jpg" width="305" height="212" alt="Скала и космос">
+              </a>
               <h3 class="product__card-title">GreenTree Inn</h3>
               <div class="product__card-info">
                 <p class="product__card-house-type">Гостиница</p>
@@ -225,8 +234,10 @@
           <h2 class="title subscribe-title subscribe__catalog-title">Подпишитесь на рассылку</h2>
           <p class="subscribe__text subscribe__catalog-text">Только полезная информация и никакого спама, честное
             бойскаутское!</p>
-          <input class="subscribe__mail" type="email" name="mail" placeholder="Ваш e-mail" required>
-          <button class="subscribe__button button" type="submit">Подписаться</button>
+          <div class="subscribe__block">
+            <input class="subscribe__mail" type="email" name="mail" placeholder="Ваш e-mail" required>
+            <button class="subscribe__button button" type="submit">Подписаться</button>
+          </div>
         </form>
       </main>
       <footer class="footer">
