@@ -1335,11 +1335,6 @@ body {
   flex: 1 1 auto;
 }
 
-.form__modal-title-child {
-  position: relative;
-  padding-right: 30px;
-}
-
 .tooltip {
   position: absolute;
   margin-left: 10px;
@@ -1485,7 +1480,7 @@ body {
   justify-content: space-between;
 }
 
-@media (max-width: 63px) {
+@media (max-width: 633px) {
   .form__label-adults {
     margin-bottom: 10px;
   }
