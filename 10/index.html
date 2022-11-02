@@ -8,7 +8,8 @@
     <!-- Отключение формирования ссылки у номера телефона на iOS -->
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+
 
     <title>Главная</title>
     <base href="https://htmlacademy-htmlcss.github.io/2116573-sedona-35/10/">
@@ -47,7 +48,6 @@
                   </clipPath>
                 </defs>
               </svg>
-
             </a>
             <div class="header__links">
               <a class="header__link header__link-active" href="#">Главная</a>
@@ -136,7 +136,7 @@
         <section class="search">
           <h2 class="title">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="search__link button" href="#">Поиск гостиницы в Седоне</a>
+          <button type="button" class="search__link button" id="btnOpenPopup">Поиск гостиницы в Седоне</button>
         </section>
         <!-- Блок подписки -->
         <form class="subscribe__form subscribe-image" action="https://echo.htmlacademy.ru/" method="post">
@@ -188,9 +188,9 @@
         </section>
       </footer>
 
-      <div class="modal__wrapper">
-        <div class="modal">
-          <button class="modal__close-button button">
+      <div class="modal__wrapper" id="popupWrapper">
+        <div class="modal" id="popup">
+          <button class="modal__close-button button" id="popapCloseBtn">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <section>
@@ -222,7 +222,7 @@
                 <label class="form__label-child">
                   <span class="form__modal-title form__modal-title-child">Дети:
                     <span class="tooltip">
-                      <button class="tooltip__toggle" aria-labelledby="tooltip-child-info">
+                      <button type="button" class="tooltip__toggle" aria-labelledby="tooltip-child-info">
                         <svg class="tooltip__icon" fill="#83B3D3" width="26" height="26" viewBox="0 0 26 26" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
                           <circle cx="13" cy="13" r="13" />
@@ -247,6 +247,7 @@
         </div>
       </div>
     </div>
+    <script src="js/scrypt.js"></script>
   </body>
 
 </html>
