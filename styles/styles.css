@@ -307,6 +307,7 @@ body {
 .features__city img {
   vertical-align: top;
   max-width: 100%;
+  margin: 0 auto;
   height: 100%;
 }
 
@@ -318,6 +319,7 @@ body {
 .features__devils-bridge img {
   vertical-align: top;
   max-width: 100%;
+  margin: 0 auto;
   height: 100%;
 }
 
@@ -892,8 +894,6 @@ body {
 }
 
 .button__sibmit-form {
-  width: 191px;
-  height: 36px;
   padding: 8px 50px;
   background-color: #82B3D3;
   margin-top: 56px;
@@ -1153,7 +1153,7 @@ body {
 }
 
 .green-tree-star {
-  width: 36px;
+  width: 48px;
 }
 
 /* ============Пагинация============== */
@@ -1359,6 +1359,8 @@ body {
 
 .tooltip {
   position: absolute;
+  top: 11px;
+  left: 50px;
   margin-left: 10px;
   width: 26px;
   height: 26px;
@@ -1410,15 +1412,15 @@ body {
   cursor: pointer;
 }
 
-.form__label-entry + p,
-.form__label-exit + p {
+.form__label-entry + span,
+.form__label-exit + span {
   position: absolute;
   width: 100%;
   bottom: -25px;
   left: 20px;
 }
 
-.form__modal-input + p {
+.form__modal-input + span {
   position: absolute;
   font-weight: 400;
   font-size: 16px;
