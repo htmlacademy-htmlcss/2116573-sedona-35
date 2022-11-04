@@ -8,7 +8,7 @@
     <!-- Отключение формирования ссылки у номера телефона на iOS -->
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
 
 
     <title>Каталог</title>
@@ -56,14 +56,20 @@
           </div>
 
           <div class="header__right header__links-right">
-            <a href="#" class="header__link-right">
+            <a class="header__link-right" href="#">
               <span class="visually-hidden">Поиск</span>
-              <img src="images/svg-symbol/search.svg" width="20" height="20" alt="Поиск">
+              <svg width="20" height="20" fill="#000" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m18.5 17-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87A8 8 0 0 0 8.5.5C4.1.5.5 4.18.5 8.56a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" />
+              </svg>
             </a>
             <a class="header__link-heart header__link-right" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="header__link-favourite-decor">12</span>
-              <img src="images/svg-symbol/favourite.svg" width="20" height="20" alt="Избранное">
+              <svg width="20" height="20" fill="#000" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+              </svg>
             </a>
             <a class="header__button button" href="catalog.html">Хочу сюда!</a>
           </div>
@@ -100,7 +106,7 @@
                     </div>
                   </fieldset>
                   <fieldset class="filters__group">
-                    <legend class="filters__title">Тип жилья:</legend>
+                    <legend class="filters__title">Тип Жилья:</legend>
                     <div class="filters__item">
                       <input class="visually-hidden filters__radio" type="radio" name="type-housing" value="hotel"
                         id="hotel" checked>
@@ -114,7 +120,7 @@
                     <div class="filters__item">
                       <input class="visually-hidden filters__radio" type="radio" name="type-housing" value="apartments"
                         id="apartments">
-                      <label for="apartments">Аппартаменты</label>
+                      <label for="apartments">Апартаменты</label>
                     </div>
                   </fieldset>
                 </div>
@@ -134,7 +140,7 @@
                     </div>
                     <div class="range">
                       <div class="range-scale">
-                        <div class="range-bar" style="left: 10px; width: 278px">
+                        <div class="range-bar" style="left: 10px; width: 208px">
                           <button class="range-toggle toggle-min" type="button">
                             <span class="visually-hidden">Изменить минимальную цену.</span>
                           </button>
@@ -146,8 +152,8 @@
                     </div>
                   </fieldset>
                   <div class="filters__buttons">
-                    <button type="button" class="button__sibmit-form button">Применить</button>
-                    <button type="button" class="button__reset-form button">Сбросить</button>
+                    <button class="button__sibmit-form button" type="button">Применить</button>
+                    <button class="button__reset-form button" type="button">Сбросить</button>
                   </div>
                 </div>
               </form>
@@ -162,11 +168,11 @@
             <p class="catalog__searching-result">Найдено гостиниц: <span class="search__result">38</span></p>
             <select class="sort-products" name="sort-products" id="sort-products" aria-label="Вид сортировки товаров">
               <option value="popular-first">Сначала популярные</option>
-              <option value="expensive-first">Сначала дешёвые</option>
+              <option value="expensive-first" selected>Сначала дешёвые</option>
               <option value="cheap-first">Сначала дорогие</option>
             </select>
             <div class="sort-products__view">
-              <a href="#" class="catalog-view catalog-view-active" title="Таблица">
+              <a class="catalog-view catalog-view-active" href="#" title="Таблица">
                 <span class="visually-hidden">Отобразить в виде таблицы</span>
                 <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#a)" fill="#000">
@@ -179,7 +185,7 @@
                   </defs>
                 </svg>
               </a>
-              <a href="#" class="catalog-view" title="Слайд-шоу">
+              <a class="catalog-view" href="#" title="Слайд-шоу">
                 <span class="visually-hidden">Отобразить в виде слайд-шоу</span>
                 <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#a)" fill="#000">
@@ -192,7 +198,7 @@
                   </defs>
                 </svg>
               </a>
-              <a href="#" class="catalog-view" title="Список">
+              <a class="catalog-view" href="#" title="Список">
                 <span class="visually-hidden">Отобразить в виде списка</span>
                 <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#a)" fill="#000">
@@ -219,8 +225,8 @@
               <h3 class="product__card-title">Amara Resort & Spa</h3>
               <div class="product__card-info">
                 <p class="product__card-house-type">Гостиница</p>
-                <b class="product__card-price">от 4000 ₽</b>
-                <a href="#" class="button__card-detailed button">Подробнее</a>
+                <b class="product__card-price">От 4000 ₽</b>
+                <a class="button__card-detailed button" href="#">Подробнее</a>
                 <button class="button__card-favourites button" type="button">В избранное</button>
                 <div class="product__card-star"></div>
                 <p class="product__card-rating button">Рэйтинг: <span>8,5</span></p>
@@ -234,8 +240,8 @@
               <h3 class="product__card-title">Villas at Poco Diablo</h3>
               <div class="product__card-info">
                 <p class="product__card-house-type">Гостиница</p>
-                <b class="product__card-price">от 5000 ₽</b>
-                <a href="#" class="button__card-detailed button">Подробнее</a>
+                <b class="product__card-price">От 5000 ₽</b>
+                <a class="button__card-detailed button" href="#">Подробнее</a>
                 <button class="button__card-favourites button__card-active button" type="button">В избранном</button>
                 <div class="product__card-star"></div>
                 <p class="product__card-rating button">Рэйтинг: <span>9,2</span></p>
@@ -249,8 +255,8 @@
               <h3 class="product__card-title">Desert Quail Inn</h3>
               <div class="product__card-info">
                 <p class="product__card-house-type">Гостиница</p>
-                <b class="product__card-price">от 2500 ₽</b>
-                <a href="#" class="button__card-detailed button">Подробнее</a>
+                <b class="product__card-price">От 2500 ₽</b>
+                <a class="button__card-detailed button" href="#">Подробнее</a>
                 <button class="button__card-favourites button" type="button">В избранное</button>
                 <div class="product__card-star desert-star"></div>
                 <p class="product__card-rating button">Рэйтинг: <span>6,9</span></p>
@@ -264,8 +270,8 @@
               <h3 class="product__card-title">GreenTree Inn</h3>
               <div class="product__card-info">
                 <p class="product__card-house-type">Гостиница</p>
-                <b class="product__card-price">от 1500 ₽</b>
-                <a href="#" class="button__card-detailed button">Подробнее</a>
+                <b class="product__card-price">От 1500 ₽</b>
+                <a class="button__card-detailed button" href="#">Подробнее</a>
                 <button class="button__card-favourites button" type="button">В избранное</button>
                 <div class="product__card-star green-tree-star"></div>
                 <p class="product__card-rating button">Рэйтинг: <span>5,0</span></p>
@@ -288,7 +294,7 @@
           <p class="subscribe__text subscribe__catalog-text">Только полезная информация и никакого спама,<br> честное
             бойскаутское!</p>
           <div class="subscribe__block">
-            <input class="subscribe__mail" type="email" name="mail" placeholder="Ваш e-mail" required>
+            <input class="subscribe__mail" title="" type="email" name="mail" placeholder="Ваш e-mail" required>
             <button class="subscribe__button button" type="submit">Подписаться</button>
           </div>
         </form>
