@@ -18,7 +18,7 @@
     <div class="container__content">
       <header class="header">
         <nav class="header__container">
-          <div class="header__left">
+          <div>
             <a class="header__logo" href="index.html">
               <svg width="140" height="70" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#a)">
@@ -55,7 +55,7 @@
             </div>
           </div>
 
-          <div class="header__right header__links-right">
+          <div class="header__right">
             <a class="header__link-right" href="#">
               <span class="visually-hidden">Поиск</span>
               <svg width="20" height="20" fill="#000" xmlns="http://www.w3.org/2000/svg">
@@ -81,13 +81,13 @@
           <div class="container">
             <h1 class="header__inner-title title">Гостиницы Седоны</h1>
             <div class="breadcrumb">
-              <a class="breadcrumb__item breadcrumb-house" href="index.html"></a>
+              <a class="breadrumb__item breadcrumb-house" href="index.html"></a>
               <a class="breadcrumb__item">Гостиницы</a>
             </div>
             <article class="filters">
               <h2 class="visually-hidden">Фильтры к товарам</h2>
               <form class="filters__form" action="https://echo.htmlacademy.ru/" method="get">
-                <div class="filters-left">
+                <div class="filters__left">
                   <fieldset class="filters__group">
                     <legend class="filters__title">Инфраструктура:</legend>
                     <div class="filters__item">
@@ -108,18 +108,18 @@
                   <fieldset class="filters__group">
                     <legend class="filters__title">Тип Жилья:</legend>
                     <div class="filters__item">
-                      <input class="visually-hidden filters__radio" type="radio" name="type-housing" value="hotel"
-                        id="hotel" checked>
+                      <input class="visually-hidden filters__radio" type="radio" name="type-housing" id="hotel"
+                        value="hotel" checked>
                       <label for="hotel">Гостиница</label>
                     </div>
                     <div class="filters__item">
-                      <input class="visually-hidden filters__radio" type="radio" name="type-housing" value="motel"
-                        id="motel">
+                      <input class="visually-hidden filters__radio" type="radio" name="type-housing" id="motel"
+                        value="motel">
                       <label for="motel">Мотель</label>
                     </div>
                     <div class="filters__item">
-                      <input class="visually-hidden filters__radio" type="radio" name="type-housing" value="apartments"
-                        id="apartments">
+                      <input class="visually-hidden filters__radio" type="radio" name="type-housing" id="apartments"
+                        value="apartments">
                       <label for="apartments">Апартаменты</label>
                     </div>
                   </fieldset>
@@ -129,7 +129,7 @@
                   <fieldset class="filters__group filters__group-price">
                     <legend class="filters__title">Cтоимость, ₽:</legend>
                     <div class="filters__price-wrapper">
-                      <input class="filters__price-input filters__price-min" type="number" name="price-input-min"
+                      <input class="filters__price-input" type="number" name="price-input-min"
                         max="9000" placeholder="0">
                       <span class="filters__price-text">от</span>
                     </div>
@@ -139,12 +139,12 @@
                       <span class="filters__price-text">до</span>
                     </div>
                     <div class="range">
-                      <div class="range-scale">
-                        <div class="range-bar" style="left: 10px; width: 208px">
-                          <button class="range-toggle toggle-min" type="button">
+                      <div class="range__scale">
+                        <div class="range__bar" style="left: 10px; width: 208px">
+                          <button class="range__toggle toggle__min" type="button">
                             <span class="visually-hidden">Изменить минимальную цену.</span>
                           </button>
-                          <button class="range-toggle toggle-max" type="button">
+                          <button class="range__toggle toggle__max" type="button">
                             <span class="visually-hidden">Изменить максимальную цену.</span>
                           </button>
                         </div>
@@ -164,15 +164,15 @@
         <section class="container">
           <h2 class="visually-hidden">Результаты поиска</h2>
           <!--Информация о каталоге-->
-          <header class="container-header">
+          <header class="container__header">
             <p class="catalog__searching-result">Найдено гостиниц: <span class="search__result">38</span></p>
-            <select class="sort-products" name="sort-products" id="sort-products" aria-label="Вид сортировки товаров">
+            <select class="sort__products" name="sort-products" id="sort-products" aria-label="Вид сортировки товаров">
               <option value="popular-first">Сначала популярные</option>
               <option value="expensive-first" selected>Сначала дешёвые</option>
               <option value="cheap-first">Сначала дорогие</option>
             </select>
-            <div class="sort-products__view">
-              <a class="catalog-view catalog-view-active" href="#" title="Таблица">
+            <div>
+              <a class="catalog__view catalog__view-active" href="#" title="Таблица">
                 <span class="visually-hidden">Отобразить в виде таблицы</span>
                 <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#a)" fill="#000">
@@ -185,7 +185,7 @@
                   </defs>
                 </svg>
               </a>
-              <a class="catalog-view" href="#" title="Слайд-шоу">
+              <a class="catalog__view" href="#" title="Слайд-шоу">
                 <span class="visually-hidden">Отобразить в виде слайд-шоу</span>
                 <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#a)" fill="#000">
@@ -198,7 +198,7 @@
                   </defs>
                 </svg>
               </a>
-              <a class="catalog-view" href="#" title="Список">
+              <a class="catalog__view" href="#" title="Список">
                 <span class="visually-hidden">Отобразить в виде списка</span>
                 <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#a)" fill="#000">
@@ -217,7 +217,6 @@
           <!-- Товары -->
           <section class="catalog__products product container">
             <h2 class="visually-hidden">Товары</h2>
-
             <section class="product__card">
               <a class="product__card-image" href="#">
                 <img src="images/hotel/Amara-Resort.jpg" width="305" height="212" alt="Скалы и космос">
@@ -290,11 +289,11 @@
         </section>
         <!-- Блок подписки -->
         <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-          <h2 class="title subscribe-title subscribe__catalog-title">Подпишитесь на рассылку</h2>
+          <h2 class="title subscribe__title subscribe__catalog-title">Подпишитесь на рассылку</h2>
           <p class="subscribe__text subscribe__catalog-text">Только полезная информация и никакого спама,<br> честное
             бойскаутское!</p>
           <div class="subscribe__block">
-            <input class="subscribe__mail" title="" type="email" name="mail" placeholder="Ваш e-mail" required>
+            <input class="subscribe__mail" type="email" name="mail" placeholder="Ваш e-mail" title="" required>
             <button class="subscribe__button button" type="submit">Подписаться</button>
           </div>
         </form>
