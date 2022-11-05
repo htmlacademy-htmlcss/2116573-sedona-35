@@ -16,8 +16,8 @@
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -256,6 +256,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .features__item {
@@ -277,11 +279,6 @@ body {
 
 .features__item-dark-gray {
   background-color: rgba(131, 179, 211, 0.2);
-}
-
-.features__list {
-  margin: 0;
-  padding: 0;
 }
 
 .features__list h2 {
@@ -630,7 +627,6 @@ body {
   }
 }
 
-
 .breadcrumb__item {
   position: relative;
   padding: 5px 0;
@@ -648,20 +644,21 @@ body {
   width: 13px;
   height: 13px;
   display: inline-block;
-  background: url("../images/svg-symbol/house-breadcrubs.svg") 0 0 / 100% no-repeat;
+  background: url("../images/svg-symbol/house-breadcrumbs.svg") 0 0 / 100% no-repeat;
 }
 
 .breadcrumb__item + .breadcrumb__item {
-  margin-left: 28px;
+  margin-left: 25px;
+  position: relative;
 }
 
-.breadcrumb__item:not(:last-child)::after {
+.breadcrumb__item + .breadcrumb__item::after {
   content: "";
   width: 8px;
   height: 11px;
   position: absolute;
-  top: 2px;
-  right: -20px;
+  top: 10px;
+  left: -20px;
   background: url("../images/svg-symbol/arrow-filter.svg") 0 0 / cover no-repeat;
 }
 
@@ -800,7 +797,7 @@ body {
 }
 
 .filters__price-input::placeholder {
-  color: rgba(0, 0, 0, 0.636);
+  color: rgba(0, 0, 0, 0.64);
 }
 
 .filters__price-wrapper:hover .filters__price-input {
@@ -843,14 +840,13 @@ body {
 .range__scale {
   position: relative;
   height: 4px;
-  background-color: rgba(255, 255, 255, .3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range__bar {
   position: absolute;
   height: 4px;
   background-color: #fff;
-
 }
 
 .range__toggle {
@@ -1106,10 +1102,6 @@ body {
   padding: 8px 0;
 }
 
-.product__card-rating {
-  min-width: 100%;
-}
-
 .button__card-active {
   background-color: #7DB54F;
 }
@@ -1123,15 +1115,19 @@ body {
   background-color: #82B3D3;
 }
 
-.product__card-rating:hover,
-.product__card-rating:active,
 .product__card-rating {
   font-weight: 400;
   background-color: #F2F2F2;
   color: #333;
-  max-width: 140px;
+  min-width: 100%;
   padding-top: 9px;
   padding-bottom: 9px;
+}
+
+.product__card-rating:hover,
+.product__card-rating:active {
+  background-color: #F2F2F2;
+  color: #333;
 }
 
 .button__card-active:hover,
@@ -1396,7 +1392,7 @@ body {
   padding: 15px 18px 18px 22px;
 }
 
-.tooltip__text:after {
+.tooltip__text::after {
   content: "";
   position: absolute;
   background: url("../images/svg-symbol/tooltip-arrow.svg");
@@ -1421,13 +1417,13 @@ body {
 .form__label-exit + span {
   position: absolute;
   width: 100%;
-  bottom: -25px;
+  top: 100%;
   left: 20px;
 }
 
 .form__modal-input + span {
   position: absolute;
-  bottom: -25px;
+  top: 100%;
   left: 0;
   font-weight: 400;
   font-size: 16px;
@@ -1484,21 +1480,21 @@ body {
   transform: translate(-50%, -50%) rotate(90deg);
 }
 
-.form__modal-button-minus:hover:before {
+.form__modal-button-minus:hover::before {
   background-color: #000;
 }
 
-.form__modal-button-plus:hover:before,
-.form__modal-button-plus:hover:after {
+.form__modal-button-plus:hover::before,
+.form__modal-button-plus:hover::after {
   background-color: #000;
 }
 
-.form__modal-button-minus:active:before {
+.form__modal-button-minus:active::before {
   opacity: 0.2;
 }
 
-.form__modal-button-plus:active:before,
-.form__modal-button-plus:active:after {
+.form__modal-button-plus:active::before,
+.form__modal-button-plus:active::after {
   opacity: 0.2;
 }
 
@@ -1513,19 +1509,13 @@ body {
 .form__label-child,
 .form__label-adults {
   position: relative;
-  align-self: end;
   flex: 0 1 247px;
   display: flex;
-  justify-content: space-between;
 }
 
 @media (max-width: 653px) {
   .form__label-adults {
     margin-bottom: 10px;
-  }
-
-  .form__label-adults {
-    margin-right: 0;
   }
 
   .modal__close-button {
@@ -1542,7 +1532,7 @@ body {
     left: 257%;
   }
 
-  .tooltip__text:after {
+  .tooltip__text::after {
     left: 29%;
   }
 }
@@ -1550,10 +1540,6 @@ body {
 .form__input-adults,
 .form__input-child {
   text-align: center;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .form__modal-button-search {
