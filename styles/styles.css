@@ -1305,19 +1305,20 @@ body {
 .modal__form {
   display: flex;
   flex-direction: column;
-  row-gap: 48px;
 }
 
 .form__label-entry,
 .form__label-exit {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 23px;
 }
 
 .form__block {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 48px;
 }
 
 .form__modal-input {
@@ -1355,7 +1356,8 @@ body {
 
 .form__block-relative {
   flex: 1 1 auto;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .tooltip {
@@ -1417,23 +1419,19 @@ body {
 .form__label-entry + span,
 .form__label-exit + span {
   position: absolute;
-  width: 100%;
+  min-width: 100%;
   top: 100%;
   left: 20px;
 }
 
 .form__modal-input + span {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 21px;
   margin: 4px 0 0 20px;
 }
 
 .form__modal-error-text {
   color: rgba(255, 87, 87, 1);
+  margin-top: 24px;
 }
 
 .form__modal-button-plus,
