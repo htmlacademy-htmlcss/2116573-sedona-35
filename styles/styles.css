@@ -23,10 +23,6 @@
   box-sizing: border-box;
 }
 
-a:visited {
-  text-decoration: none;
-}
-
 /*-------------------*/
 
 body {
@@ -61,7 +57,6 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 [class$="container"] {
@@ -141,6 +136,12 @@ body {
   padding-left: 170px;
 }
 
+@media (max-width: 540px) {
+  .header__links {
+    padding: 70px 0 0 0;
+  }
+}
+
 .header__link:hover {
   color: #756257;
 }
@@ -170,6 +171,9 @@ body {
 
 .header__right {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: end;
   align-items: center;
 }
 
@@ -203,6 +207,12 @@ body {
   padding: 8px 34px;
   background-color: #756157;
   border-radius: 4px;
+}
+
+@media (max-width: 790px) {
+  .header__button {
+    margin-bottom: 20px;
+  }
 }
 
 /* =============HERO============= */
@@ -498,9 +508,9 @@ body {
 }
 
 .subscribe__mail[placeholder] {
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: -0.5px;
 }
 
 .subscribe__button {
@@ -700,7 +710,6 @@ body {
 .filters__item {
   font-size: 18px;
   line-height: 23px;
-  margin-left: 1px;
 }
 
 .filters__item label {
@@ -746,7 +755,7 @@ body {
 .filters__radio {
   position: relative;
   outline: none;
-  display: none;
+  opacity: 0;
 }
 
 .filters__radio + label::before {
@@ -1036,7 +1045,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 18px;
-  padding: 24px 0 40px;
+  padding: 24px 0 38px 0;
   border-bottom: 1px solid #E6E6E6;
 }
 
@@ -1167,7 +1176,7 @@ body {
 
 /* ============Пагинация============== */
 .pagination {
-  padding: 33px 0 60px;
+  padding: 38px 0 58px 0;
   display: flex;
 }
 
