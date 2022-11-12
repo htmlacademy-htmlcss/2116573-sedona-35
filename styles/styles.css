@@ -192,6 +192,7 @@ body {
 .header__button {
   font-size: 16px;
   margin-left: 20px;
+  margin-bottom: 7px;
   padding: 8px 34px;
   background-color: #756157;
   border-radius: 4px;
